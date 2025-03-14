@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperGains</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .brand {
+            font-size: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            color: #00d4ff;
+        }
+
+        .motivation {
+            font-size: 22px;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.5;
+        }
+
+        video {
+            width: 90%;
+            max-width: 600px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0px 0px 15px rgba(0, 212, 255, 0.5);
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .video-grid video {
+            width: 100%;
+            aspect-ratio: 9 / 16; /* Mantiene el formato vertical */
+            border-radius: 15px;
+            object-fit: cover;
+        }
+
+        /* ✅ Mantiene el diseño en móviles 📱 */
+        @media (max-width: 600px) {
+            .video-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TÍTULO PRINCIPAL -->
+    <div class="brand">HyperGains</div>
+
+    <!-- VIDEO PRINCIPAL -->
+    <video autoplay muted loop>
+        <source src="./images/video.mp4" type="video/mp4">
+        Tu navegador no soporta videos.
+    </video>
+
+    <!-- MENSAJE MOTIVACIONAL -->
+    <div class="motivation">
+        Hermano, el verano está a la vuelta de la esquina. No hay tiempo para excusas, es hora de ponerte en forma y lograr el físico que siempre has querido.  
+        Cada día que pasa es una oportunidad perdida, pero tú no eres de los que se rinden.  
+
+
+
+        ¿Estás listo para cambiar tu cuerpo? 💪🔥
+
+
+        
+    </div>
+
+    <!-- GALERÍA DE 4 VIDEOS VERTICALES -->
+    <div class="video-grid">
+        <video autoplay muted loop>
+            <source src="./images/video1.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+            <source src="./images/video2.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+            <source src="./images/video3.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+            <source src="./images/video4.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</body>
+</html>
